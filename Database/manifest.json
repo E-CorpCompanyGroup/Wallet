@@ -460,7 +460,7 @@
   "id": "WalletOne",
   "dir": "auto",
   "lang": "en",
-  "orientation": "any",
+  "orientation": "portrait",
   "categories": [
     "Finance"
   ]
