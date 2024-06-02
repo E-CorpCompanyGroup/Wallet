@@ -1,0 +1,11 @@
+.LaoderIcon{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-top: 15rem;
+    margin-left: 35rem;
+    height: auto;
+    border-radius: 100px;
+    border: 1px solid red;
+    padding: 2%;
+}
