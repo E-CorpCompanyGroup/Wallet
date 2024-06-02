@@ -1,0 +1,50 @@
+.FloatButton{
+    position: fixed;
+    bottom: 1%;
+    width: 50px;
+    right: 3%;
+    left: auto;
+    background: forestgreen;
+    border-radius: 50px;
+}
+
+.OptionDiv{
+    position: relative;
+    width: 45%;
+    height: 30%;
+    margin: 2%;
+    border-radius: 10px;
+    display: inline-flex;
+}
+
+.Btn{
+    display: inline-flex;
+}
+
+.Title{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+.Code{
+    position: absolute;
+    width: 20%;
+    height: 40px;
+    margin: -0.5% 0%;
+}
+
+.Telephone{
+    width: 65%;
+    left: 30%;
+}
+
+.Section{
+    font-size: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 1rem;
+}
