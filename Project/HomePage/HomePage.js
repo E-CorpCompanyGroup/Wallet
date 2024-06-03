@@ -5,7 +5,7 @@ export const HOMEPAGE=()=>{
 
     STORE('local','UserData',JSON.stringify({"Name":"Name"}))
 
-    STORE('local','CONNECTIONURL','https://e-corpcompanygroupmovieslander.github.io/Movie_Lander_Build/');
+    STORE('local','CONNECTIONURL','https://e-corpcompanygroup.github.io/Wallet/App/index.html');
 
     WIDGET(
     `
@@ -85,7 +85,7 @@ export const HOMEPAGE=()=>{
 
         LOADER(forestgreen);
 
-        PESAPAL('https://www.e-corpcompanygroup.com',sessionStorage.getItem('Amount'),'UGX',(link)=>{
+        PESAPAL('https://e-corpcompanygroup.github.io/Wallet/App/index.html',sessionStorage.getItem('Amount'),'UGX',(link)=>{
 
             sessionStorage.clear();
 
