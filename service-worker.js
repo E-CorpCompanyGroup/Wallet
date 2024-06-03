@@ -1,6 +1,6 @@
 // service-worker.js
 
-const CACHE_NAME = 'PLUG';
+const CACHE_NAME = 'WALLET';
 const urlsToCache = [
   '/',
 ];

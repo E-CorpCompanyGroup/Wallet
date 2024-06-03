@@ -3,35 +3,46 @@ import { HOMEPAGE } from "../HomePage/HomePage.js";
 export const LOGINPAGE = () => {
 
     WIDGET(`
+
         <h2>Wallet</h2>
+
         <input class='MyCode' type='tel' maxlength='5' placeholder='Enter Code' />
-        <button class='forestgreen'>Sign In</button>
+
+        <button class='signin-btn'>Sign In</button>
+        
     `);
 
-    CLICKED('.forestgreen', () => {
+    CLICKED('.signin-btn', () => {
 
-        const Code = document.querySelector('.MyCode').value;
+        const code = document.querySelector('.MyCode').value;
 
-        if (Code !== '05012' && Code !== '20011') {
-            MESSAGE('Wrong Code');
+        if (code === '') {
+
+            MESSAGE('Please enter a Code');
             return;
-        }
 
-        if (Code === '05012') {
+        };
+
+        if (code === '05012') {
+
             localStorage.setItem('User', '01');
             localStorage.setItem('Name', 'ErouAndrewRichard');
             localStorage.setItem('Email', 'erouandrewrichard01@gmail.com');
             HOMEPAGE();
-            return;
-        }
 
-        if (Code === '20011') {
+        } else if (code === '20011') {
+
             localStorage.setItem('User', '02');
             localStorage.setItem('Name', 'NagamiEstherRuth');
             localStorage.setItem('Email', 'nagamiestherruth@gmail.com');
             HOMEPAGE();
-            return;
-        }
+
+        } else {
+
+            MESSAGE('Wrong Code');
+
+        };
 
     });
-}
+
+};
