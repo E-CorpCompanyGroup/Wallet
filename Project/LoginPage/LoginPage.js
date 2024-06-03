@@ -8,11 +8,11 @@ export const LOGINPAGE = () => {
 
         <input class='MyCode' type='tel' maxlength='5' placeholder='Enter Code' />
 
-        <button class='signin-btn'>Sign In</button>
+        <button class='forestgreen'>Sign In</button>
         
     `);
 
-    CLICKED('.signin-btn', () => {
+    CLICKED('.forestgreen', () => {
 
         const code = document.querySelector('.MyCode').value;
 
