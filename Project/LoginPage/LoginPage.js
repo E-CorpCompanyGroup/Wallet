@@ -23,6 +23,15 @@ export const LOGINPAGE=()=>{
             return
         }
 
+
+        if (Code.value !== '05012' || Code.value !==  '20011' ) {
+
+            MESSAGE('Wrong COde');
+
+            return;
+            
+        }
+
         if (Code ==='05012') {
 
             localStorage.setItem('User','01');
@@ -51,13 +60,6 @@ export const LOGINPAGE=()=>{
             
         }
 
-        if (Code.value ===!'05012'||Code.value ===!'20011' ) {
-
-            MESSAGE('Wrong COde');
-
-            return;
-            
-        }
 
     })
 
