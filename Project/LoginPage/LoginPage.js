@@ -6,7 +6,7 @@ export const LOGINPAGE=()=>{
 
         <h2>Wallet</h2>
 
-        <input class='CCode' type='tel' maxlength='5' placeholder='Enter Code' />
+        <input class='MyCode' type='tel' maxlength='5' placeholder='Enter Code' />
 
         <button class='forestgreen'>Sign In</button>
     
@@ -14,7 +14,7 @@ export const LOGINPAGE=()=>{
 
     CLICKED('.forestgreen',()=>{
 
-        const Code=document.querySelector('.CCode');
+        const Code=document.querySelector('.MyCode');
 
         if(!Code.value){
 
@@ -23,36 +23,41 @@ export const LOGINPAGE=()=>{
             return
         }
 
-        if(Code.value ==='05012'||'20011'){
+        if (Code ==='05012') {
 
-            if (Code ==='05012') {
+            localStorage.setItem('User','01');
 
-                localStorage.setItem('User','01');
+            localStorage.setItem('Name','ErouAndrewRichard');
 
-                localStorage.setItem('Name','ErouAndrewRichard');
-
-                localStorage.setItem('Email','erouandrewrichard01@gmail.com');
-                
-            } else {
-
-                localStorage.setItem('User','02');
-
-                localStorage.setItem('Name','NagamiEstherRuth');
-
-                localStorage.setItem('Email','nagamiestherruth@gmail.com');
-                
-            }
+            localStorage.setItem('Email','erouandrewrichard01@gmail.com');
 
             HOMEPAGE();
 
-        }else{
+            return;
+            
+        }
+
+        if (Code.value ==='20011') {
+
+            localStorage.setItem('User','02');
+
+            localStorage.setItem('Name','NagamiEstherRuth');
+
+            localStorage.setItem('Email','nagamiestherruth@gmail.com');
+
+            HOMEPAGE();
+
+            return;
+            
+        }
+
+        if (Code.value ===!'05012'||Code.value ===!'20011' ) {
 
             MESSAGE('Wrong COde');
 
-            return
-
+            return;
+            
         }
-
 
     })
 
