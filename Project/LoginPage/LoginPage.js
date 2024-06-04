@@ -9,7 +9,7 @@ export const LOGINPAGE = () => {
         <input class='MyCode' type='tel' maxlength='5' placeholder='Enter Code' />
 
         <button class='forestgreen'>Sign In</button>
-        
+
     `);
 
     CLICKED('.forestgreen', () => {

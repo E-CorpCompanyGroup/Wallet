@@ -5,8 +5,6 @@ export const HOMEPAGE=()=>{
 
     STORE('local','UserData',JSON.stringify({"Name":"Name"}))
 
-    STORE('local','CONNECTIONURL','https://e-corpcompanygroup.github.io/Wallet/App/index.html');
-
     WIDGET(
     `
 
@@ -85,7 +83,7 @@ export const HOMEPAGE=()=>{
 
         LOADER(forestgreen);
 
-        PESAPAL('https://e-corpcompanygroup.github.io/Wallet/App/index.html',sessionStorage.getItem('Amount'),'UGX',(link)=>{
+        PESAPAL('https://e-corpcompanygroup.github.io/Wallet/App/index.html','https://e-corpcompanygroup.github.io/Wallet/App/index.html',sessionStorage.getItem('Amount'),'UGX',(link)=>{
 
             sessionStorage.clear();
 
